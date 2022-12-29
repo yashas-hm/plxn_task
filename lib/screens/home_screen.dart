@@ -16,11 +16,11 @@ class HomeScreen extends StatelessWidget {
   Widget pages(int index) {
     switch (index) {
       case 0:
-        return const ListViewScreen();
+        return ListViewScreen();
       case 1:
         return const AddUserScreen();
       default:
-        return const ListViewScreen();
+        return ListViewScreen();
     }
   }
 
