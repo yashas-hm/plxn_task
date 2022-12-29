@@ -38,6 +38,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: Form(
+            key: formKey,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
@@ -109,11 +110,10 @@ class _AddUserScreenState extends State<AddUserScreen> {
                       Align(
                         alignment: Alignment.bottomRight,
                         child: IconButton(
-                          onPressed: () => {},
-                          // showBottomModalSheet(
-                          //   context,
-                          //   screenSize,
-                          // ),
+                          onPressed: () => showBottomModalSheet(
+                            context,
+                            screenSize,
+                          ),
                           icon: Icon(
                             Icons.edit_rounded,
                             size: 25.sp,
@@ -396,6 +396,8 @@ class _AddUserScreenState extends State<AddUserScreen> {
                               loading = true;
                               disable = true;
                             });
+
+                            controller.newUser.image = controller.imageUrl.value;
 
                             await FirestoreHelper().addUser(controller.newUser);
 

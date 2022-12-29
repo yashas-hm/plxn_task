@@ -6,7 +6,7 @@ class Dummy {
     image: '',
     age: 0,
     phone: '',
-    gender: '',
+    gender: 'Male',
     gstNumber: '',
   );
 }
