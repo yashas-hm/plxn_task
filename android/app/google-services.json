@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700751002401",
+    "project_id": "plxn-task",
+    "storage_bucket": "plxn-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700751002401:android:ef8e35734745b479f69c60",
+        "android_client_info": {
+          "package_name": "com.plxn.task.yashas.plxn_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700751002401-hmoaqtokugcdbmvqdlq79g54f3kn2uek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuPJmGDfv3KaUxssU_ad1Q5zwZLkO9AGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700751002401-hmoaqtokugcdbmvqdlq79g54f3kn2uek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
