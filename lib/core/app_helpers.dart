@@ -11,7 +11,8 @@ class AppHelpers{
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-    Get.put(UserController());
+    final ctr = Get.put(UserController());
+    ctr.getData();
   }
 
   static ThemeData appTheme(BuildContext context) => ThemeData(

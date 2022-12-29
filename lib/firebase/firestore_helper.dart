@@ -26,4 +26,13 @@ class FirestoreHelper {
       controller.userList.add(user);
     }
   }
+
+  Future<void> getData() async{
+    final data = await instance.collection(AppConstants.userCollection).get();
+    if(data.docs.isNotEmpty){
+      for(var i in data.docs){
+        controller.userList.add(UserModel.fromJson(i.data()));
+      }
+    }
+  }
 }

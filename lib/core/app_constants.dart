@@ -4,4 +4,9 @@ class AppConstants{
   static const String userCollection = 'user';
 
   static const String navBarIndexTag = 'navBarIndex';
+
+  static const String spotListUpdateTag = 'listUpdate';
+
+  static const String heroTag = 'hero';
+
 }
