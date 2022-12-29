@@ -17,10 +17,10 @@ dependencies:
   get: ^4.6.1
   http: ^0.13.4
   image_picker: ^0.8.4+11
-  connectivity_plus: ^3.0.2
+  image_cropper: ^3.0.0
+  cached_network_image: ^3.2.0
 
   #INFO: firebase dependencies
-  firebase_crashlytics: ^3.0.6
   firebase_core: ^2.3.0
   cloud_firestore: ^4.1.0
   firebase_storage: ^11.0.6
